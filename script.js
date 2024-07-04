@@ -163,3 +163,13 @@ function UpdateOnSelectionItems() {
     }, 1000);
   }
 
+  function deleteAllItems() {
+    if (confirm("Are you sure you want to delete all tasks?")) {
+        todo = [];
+        setLocalStorage();
+        while (listItems.firstChild) {
+            listItems.removeChild(listItems.firstChild);
+        }
+        setAlertMessage("All tasks deleted successfully!");
+    }
+}
