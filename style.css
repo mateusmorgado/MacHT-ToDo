@@ -132,3 +132,16 @@ h5 {
       opacity: 0;
     }
   }
+
+  .delete-all-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(141, 135, 106);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
